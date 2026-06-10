@@ -1,0 +1,335 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Modern personal portfolio website for Nandini Kondappagari, a B.Tech CSE student." />
+  <title>Nandini Kondappagari | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <canvas id="particles" aria-hidden="true"></canvas>
+
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="#home">
+        <span class="brand-mark">NK</span>
+        <span>Nandini</span>
+      </a>
+
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a class="btn secondary text-btn" href="resume.html" download="Nandini_Kondappagari_Resume.html">Resume</a>
+        <button class="icon-btn" id="themeToggle" type="button" aria-label="Toggle theme">☀️</button>
+        <button class="icon-btn menu-btn" id="menuBtn" type="button" aria-label="Open menu">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero / Home -->
+    <section id="home" class="section">
+      <div class="container hero-grid">
+        <article class="hero-card reveal">
+          <div class="badge-row">
+            <span class="badge">📘 B.Tech · 3rd Year</span>
+            <span class="badge">💻 CSE Student</span>
+            <span class="badge">🎯 Problem Solver</span>
+          </div>
+          <p class="eyebrow">Personal Portfolio</p>
+          <h1>Hi, I’m <span class="accent">Nandini Kondappagari</span>.</h1>
+          <p class="typing">CSE student building elegant solutions with code, creativity, and curiosity.</p>
+          <p class="lead">I am a motivated learner focused on Java, HTML, CSS, JavaScript, GitHub, and real-world projects. This portfolio highlights my academics, technical strengths, creative work, and professional goals.</p>
+
+          <div class="hero-cta">
+            <a class="btn primary" href="resume.html" download="Nandini_Kondappagari_Resume.html">⬇️ Download Resume</a>
+            <a class="btn secondary" href="#contact">📬 Contact Me</a>
+          </div>
+
+          <div class="quick-stats">
+            <div class="stat">
+              <strong data-target="3" data-suffix="rd">0</strong>
+              <span>Year of study</span>
+            </div>
+            <div class="stat">
+              <strong data-target="8" data-suffix="+">0</strong>
+              <span>Technical skills</span>
+            </div>
+            <div class="stat">
+              <strong data-target="3" data-suffix="+">0</strong>
+              <span>Projects built</span>
+            </div>
+          </div>
+        </article>
+
+        <aside class="profile-panel">
+          <article class="profile-card glass-card reveal">
+            <div class="avatar-wrap">
+              <div class="avatar-ring">NK</div>
+            </div>
+            <div class="info-list">
+              <div class="info-item"><span>Name</span><strong>Nandini Kondappagari</strong></div>
+              <div class="info-item"><span>Course</span><strong>B.Tech · 3rd Year</strong></div>
+              <div class="info-item"><span>Branch</span><strong>CSE</strong></div>
+              <div class="info-item"><span>College</span><strong>Mother Teresa Institute of Engineering and Technology</strong></div>
+            </div>
+          </article>
+
+          <article class="mini-card reveal">
+            <p class="eyebrow">Current Focus</p>
+            <h3>Learning, building, and growing.</h3>
+            <p class="lead">I enjoy creating user-friendly interfaces, improving my coding skills, and developing projects that solve real needs.</p>
+          </article>
+        </aside>
+      </div>
+    </section>
+
+    <!-- About Me -->
+    <section id="about" class="section">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="eyebrow">About Me</p>
+          <h2 class="title">A confident learner with a creative and technical mindset.</h2>
+          <p class="lead">I am a student who enjoys exploring new technologies, writing clean code, and turning ideas into polished digital experiences.</p>
+        </div>
+
+        <div class="about-grid">
+          <article class="about-card glass-card reveal">
+            <p>I am currently pursuing B.Tech in Computer Science and Engineering at Mother Teresa Institute of Engineering and Technology. My interests lie in programming, web development, and continuous learning.</p>
+            <p>My goal is to build strong fundamentals in software development and contribute to meaningful, engaging, and efficient digital solutions.</p>
+          </article>
+
+          <article class="about-card glass-card reveal">
+            <h3>Highlights</h3>
+            <div class="highlight-list">
+              <div class="highlight-item"><span>🧠</span><div><strong>Analytical thinker</strong><span>Comfortable with coding and debugging challenges.</span></div></div>
+              <div class="highlight-item"><span>🌐</span><div><strong>Web enthusiast</strong><span>Strong interest in HTML, CSS, and JavaScript.</span></div></div>
+              <div class="highlight-item"><span>📈</span><div><strong>Disciplined learner</strong><span>Committed to improving every day.</span></div></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section id="education" class="section">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="eyebrow">Education</p>
+          <h2 class="title">Academic path and learning focus</h2>
+        </div>
+        <div class="timeline-grid">
+          <article class="timeline-card glass-card reveal">
+            <h3>B.Tech in Computer Science and Engineering</h3>
+            <p class="meta">Mother Teresa Institute of Engineering and Technology · 2023 – Present</p>
+            <ul>
+              <li>Exploring core programming, web development, and problem-solving.</li>
+              <li>Building practical skills in Java, C, HTML, CSS, and JavaScript.</li>
+            </ul>
+          </article>
+          <article class="timeline-card glass-card reveal">
+            <h3>Academic Strengths</h3>
+            <p class="meta">Focused on structured learning and hands-on practice</p>
+            <ul>
+              <li>Strong interest in logical thinking and software fundamentals.</li>
+              <li>Consistent effort to improve technical and communication skills.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Technical Skills -->
+    <section id="skills" class="section">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="eyebrow">Technical Skills</p>
+          <h2 class="title">Core competencies and practical learning</h2>
+          <p class="lead">These skills represent my current strength and the tools I use to build, learn, and improve.</p>
+        </div>
+        <div class="skill-grid">
+          <article class="skill-card glass-card reveal">
+            <h3>C Programming</h3>
+            <p>Foundation in logic, syntax, and problem-solving.</p>
+            <div class="progress-wrap"><span>85%</span><div class="progress-bar"><div class="progress-fill" data-width="85"></div></div></div>
+          </article>
+          <article class="skill-card glass-card reveal">
+            <h3>Java</h3>
+            <p>Object-oriented programming fundamentals and coding practice.</p>
+            <div class="progress-wrap"><span>78%</span><div class="progress-bar"><div class="progress-fill" data-width="78"></div></div></div>
+          </article>
+          <article class="skill-card glass-card reveal">
+            <h3>HTML & CSS</h3>
+            <p>Creating clean, modern, responsive interfaces.</p>
+            <div class="progress-wrap"><span>90%</span><div class="progress-bar"><div class="progress-fill" data-width="90"></div></div></div>
+          </article>
+          <article class="skill-card glass-card reveal">
+            <h3>JavaScript</h3>
+            <p>Interactive design and smooth user experiences.</p>
+            <div class="progress-wrap"><span>70%</span><div class="progress-bar"><div class="progress-fill" data-width="70"></div></div></div>
+          </article>
+          <article class="skill-card glass-card reveal">
+            <h3>MS Excel</h3>
+            <p>Data handling, organization, and analytical tasks.</p>
+            <div class="progress-wrap"><span>75%</span><div class="progress-bar"><div class="progress-fill" data-width="75"></div></div></div>
+          </article>
+          <article class="skill-card glass-card reveal">
+            <h3>GitHub & VS Code</h3>
+            <p>Version control and efficient coding environment workflow.</p>
+            <div class="progress-wrap"><span>82%</span><div class="progress-bar"><div class="progress-fill" data-width="82"></div></div></div>
+          </article>
+        </div>
+
+        <article class="mini-card reveal" style="margin-top: 1rem;">
+          <p class="eyebrow">Soft Skills</p>
+          <div class="skill-tag-row">
+            <span class="skill-tag">Communication</span>
+            <span class="skill-tag">Teamwork</span>
+            <span class="skill-tag">Problem Solving</span>
+            <span class="skill-tag">Quick Learning</span>
+            <span class="skill-tag">Time Management</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="eyebrow">Projects</p>
+          <h2 class="title">Selected work that reflects my growth</h2>
+          <p class="lead">A mix of web design, coding practice, and student-focused project ideas.</p>
+        </div>
+
+        <div class="filter-row reveal">
+          <button class="filter-chip active" data-filter="all" type="button">All</button>
+          <button class="filter-chip" data-filter="web" type="button">Web</button>
+          <button class="filter-chip" data-filter="coding" type="button">Coding</button>
+          <button class="filter-chip" data-filter="design" type="button">Design</button>
+        </div>
+
+        <div class="project-grid">
+          <article class="project-card glass-card reveal" data-category="web">
+            <div class="project-visual"></div>
+            <h3>Responsive Portfolio Website</h3>
+            <p>Built a modern personal portfolio with elegant UI, animation, and mobile-friendly layout.</p>
+            <div class="project-tags"><span>HTML</span><span>CSS</span><span>JS</span></div>
+            <div class="project-links"><a href="#home">Live Preview</a><a href="resume.html">Resume</a></div>
+          </article>
+          <article class="project-card glass-card reveal" data-category="coding">
+            <div class="project-visual"></div>
+            <h3>C Programming Practice Console</h3>
+            <p>Developed small snippets and logic-based mini programs to strengthen fundamental coding skills.</p>
+            <div class="project-tags"><span>C</span><span>Algorithms</span><span>Logic</span></div>
+            <div class="project-links"><a href="#skills">See Skills</a><a href="#contact">Connect</a></div>
+          </article>
+          <article class="project-card glass-card reveal" data-category="design">
+            <div class="project-visual"></div>
+            <h3>Creative UI Layouts</h3>
+            <p>Designed attractive, professional card-based interfaces focused on clean aesthetics and readability.</p>
+            <div class="project-tags"><span>UI</span><span>Design</span><span>Responsive</span></div>
+            <div class="project-links"><a href="#about">About Me</a><a href="resume.html">View Resume</a></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Certifications -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="eyebrow">Certifications</p>
+          <h2 class="title">Learning milestones and achievements</h2>
+        </div>
+        <div class="cert-grid">
+          <article class="cert-card glass-card reveal">
+            <div class="cert-icon">📘</div>
+            <h3>Web Development Basics</h3>
+            <p>Strong foundation in structure, style, and layout.</p>
+          </article>
+          <article class="cert-card glass-card reveal">
+            <div class="cert-icon">⚙️</div>
+            <h3>Java Fundamentals</h3>
+            <p>Building confidence in syntax, logic, and programming practice.</p>
+          </article>
+          <article class="cert-card glass-card reveal">
+            <div class="cert-icon">🧩</div>
+            <h3>GitHub & Collaboration</h3>
+            <p>Version control and project organization habits.</p>
+          </article>
+          <article class="cert-card glass-card reveal">
+            <div class="cert-icon">📊</div>
+            <h3>MS Excel Basics</h3>
+            <p>Data management and practical spreadsheet skills.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Hobbies -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="eyebrow">Hobbies</p>
+          <h2 class="title">What I enjoy beyond academics</h2>
+        </div>
+        <div class="achieve-grid">
+          <article class="achievement-card reveal"><strong>📚</strong><span>Reading Books</span></article>
+          <article class="achievement-card reveal"><strong>💡</strong><span>Learning New Technologies</span></article>
+          <article class="achievement-card reveal"><strong>🎧</strong><span>Listening to Music</span></article>
+          <article class="achievement-card reveal"><strong>✨</strong><span>Creative Problem Solving</span></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section">
+      <div class="container contact-grid">
+        <article class="contact-card glass-card reveal">
+          <p class="eyebrow">Contact Information</p>
+          <h2 class="title">Let’s connect</h2>
+          <p class="lead">I am always open to learning opportunities, collaborations, and meaningful discussions.</p>
+          <div class="info-list">
+            <div class="info-item"><span>Email</span><strong>kondappagarinandini@gmail.com</strong></div>
+            <div class="info-item"><span>Phone</span><strong>9966565853</strong></div>
+            <div class="info-item"><span>College</span><strong>Mother Teresa Institute of Engineering and Technology</strong></div>
+            <div class="info-item"><span>Branch</span><strong>CSE · B.Tech 3rd Year</strong></div>
+          </div>
+        </article>
+
+        <article class="contact-form reveal">
+          <div class="form-row">
+            <label>Name<input type="text" placeholder="Your name" /></label>
+            <label>Email<input type="email" placeholder="Your email" /></label>
+          </div>
+          <label>Subject<input type="text" placeholder="What would you like to discuss?" /></label>
+          <label>Message<textarea placeholder="Write your message here..."></textarea></label>
+          <button class="btn primary" type="button">Send Message</button>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="yearLabel"></span> Nandini Kondappagari. Crafted with care for a professional online presence.</p>
+      <div class="skill-tag-row" style="justify-content:center; margin-top: .6rem;">
+        <a class="skill-tag" href="mailto:kondappagarinandini@gmail.com" aria-label="Email">✉️ Email</a>
+        <a class="skill-tag" href="https://github.com" target="_blank" rel="noreferrer" aria-label="GitHub">💻 GitHub</a>
+        <a class="skill-tag" href="https://www.linkedin.com" target="_blank" rel="noreferrer" aria-label="LinkedIn">🔗 LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
