@@ -1,0 +1,11 @@
+
+    body{
+        display: flex;
+        flex-direction: row ;
+        flex-wrap: wrap ;
+        gap: 1cm ;
+        flex-grow:1 ;
+    }
+
+    
+
