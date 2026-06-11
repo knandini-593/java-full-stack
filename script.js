@@ -57,7 +57,7 @@ if(name=="nandhu"){
     }
   }
 }*/
-function cook()
+/*function cook()
 {
   console.log("Pour the flour in  pawa");
   console.log("Rub it round with gareta");
@@ -80,4 +80,28 @@ for(let i=1;i<=5;i++){
     n+=1;
     num(n);
   }
-  num(1);
+  num(1);*/
+ /* function guess(n) {
+    let userGuess = Number(prompt("Enter a number:"));
+
+    if (userGuess == n) {
+        console.log("Congratulations! You guessed the number.");
+    } else if (userGuess < n) {
+        console.log("Too low! Try again.");
+        guess(n);
+    } else {
+        console.log("Too high! Try again.");
+        guess(n);
+    }
+}
+
+let number = Math.floor(Math.random() * 100) + 1;
+guess(number);*/
+let chocolate=["Melodi","Fivestar","kitkat","kachamango","darkchocolate","alphenlebe"];
+let sales={
+  nandini:chocolate[0],
+  tejasree:chocolate[1],
+  mounika:chocolate[2],
+  shalini:chocolate[3],
+};
+console.log(sales.mounika);
