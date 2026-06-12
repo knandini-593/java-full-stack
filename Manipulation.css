@@ -1,0 +1,10 @@
+img{
+    width: 400px;
+}
+body{
+    background-color: #E5E5E5;
+}
+#content{
+   display: flex;
+   gap: 1cm;
+}

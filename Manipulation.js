@@ -1,0 +1,10 @@
+let pens = docuument.getElementById("Wish");
+console.log(pens);
+let mouse = docuument.getElementById("Wishes");
+console.log(mouse);
+let cable = docuument.getElementById("div");
+console.log(cable);
+let water = docuument.queryselector("#content");
+console.log(water);
+let queries = Document.queryselectorAll("p");
+console.log(queries);
