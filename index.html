@@ -3,266 +3,175 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Professional Portfolio | Your Name</title>
-    <meta name="description" content="Modern personal profile website with portfolio sections, skills, projects, certifications and contact information." />
+    <meta name="description" content="Professional portfolio website for K. Nandini" />
+    <title>K. Nandini | Professional Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="portfolio.css" />
   </head>
-  <body class="light-theme">
-    <header class="topbar">
-      <a class="brand" href="#home">YourName</a>
-      <button class="menu-toggle" aria-label="Open navigation">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-      <nav class="nav-links" id="nav-links">
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#education">Education</a>
-        <a href="#experience">Experience</a>
-        <a href="#projects">Projects</a>
-        <a href="#certifications">Certifications</a>
-        <a href="#contact">Contact</a>
-      </nav>
-      <button id="themeToggle" class="theme-toggle" aria-label="Toggle theme">
-        <i class="fa-solid fa-moon"></i>
-      </button>
-    </header>
+  <body>
+    <div class="site-shell">
+      <header class="topbar glass-panel">
+        <a class="brand" href="#home">K. Nandini</a>
+        <button class="menu-btn" id="menuBtn" aria-label="Toggle navigation">☰</button>
+        <nav class="nav-links" id="navLinks">
+          <a href="#about">About</a>
+          <a href="#education">Education</a>
+          <a href="#skills">Skills</a>
+          <a href="#certificates">Certificates</a>
+          <a href="#hobbies">Hobbies</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </header>
 
-    <main>
-      <!-- HERO SECTION -->
-      <section id="home" class="hero section-card">
-        <div class="hero-copy">
-          <p class="eyebrow">Software Developer • Andhra Pradesh, India</p>
-          <h1>Hi, I’m <span>Your Name</span></h1>
-          <p class="lead">
-            I build clean, scalable, and user-centered digital experiences with a focus on
-            performance, accessibility, and modern design.
+      <main>
+        <section class="hero glass-panel reveal" id="home">
+          <div class="hero-copy">
+            <p class="eyebrow">Welcome to a refined digital portfolio</p>
+            <h1>Hi, I’m <span>K. Nandini</span></h1>
+            <h2>I am a <span id="role"></span></h2>
+            <p class="intro">
+              I am currently pursuing B.Tech 3rd Year with a strong passion for technology,
+              innovation, and software development. I enjoy learning new concepts, building
+              practical solutions, and continuously improving my technical and communication skills.
+            </p>
+            <div class="cta-row">
+              <a class="btn btn-primary" href="#skills">Explore My Skills</a>
+              <button class="btn btn-secondary" type="button" onclick="welcomeMessage()">Start Tour</button>
+            </div>
+            <ul class="mini-stats">
+              <li><strong>3rd Year</strong><span>B.Tech Student</span></li>
+              <li><strong>6+</strong><span>Core Skills</span></li>
+              <li><strong>2</strong><span>NPTEL Certifications</span></li>
+            </ul>
+          </div>
+
+          <aside class="profile-card reveal">
+            <div class="avatar-ring">KN</div>
+            <h3>Portfolio Snapshot</h3>
+            <p>Creative, curious, and focused on building meaningful software experiences.</p>
+            <div class="badge-grid">
+              <span>Java</span>
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JS</span>
+            </div>
+            <div class="quote-box">“Technology is not just a subject; it is a mindset of constant growth.”</div>
+          </aside>
+        </section>
+
+        <section class="glass-panel reveal" id="about">
+          <div class="section-heading">
+            <p class="eyebrow">About Me</p>
+            <h2>Purposeful, curious, and always learning</h2>
+          </div>
+          <p class="paragraph-card">
+            I am K. Nandini, currently pursuing B.Tech 3rd Year with an enthusiasm for emerging technologies,
+            problem-solving, and software innovation. My goal is to develop meaningful digital solutions while
+            growing as a strong professional in the world of technology.
           </p>
-          <div class="hero-actions">
-            <a class="btn btn-primary" href="#projects">View Projects</a>
-            <a class="btn btn-secondary" href="#contact">Contact Me</a>
+          <div class="about-grid">
+            <article class="info-card">Communication Skills</article>
+            <article class="info-card">C Programming</article>
+            <article class="info-card">Java Programming</article>
+            <article class="info-card">Frontend Development</article>
           </div>
-          <ul class="mini-stats">
-            <li><strong>3+</strong> Years Experience</li>
-            <li><strong>10+</strong> Projects Delivered</li>
-            <li><strong>5</strong> Certifications</li>
-          </ul>
-        </div>
+        </section>
 
-        <aside class="profile-card">
-          <div class="profile-photo-wrap">
-            <img
-              src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=500&q=80"
-              alt="Profile photo of Your Name"
-              class="profile-photo"
-            />
+        <section class="glass-panel reveal" id="education">
+          <div class="section-heading">
+            <p class="eyebrow">Education</p>
+            <h2>Academic journey</h2>
           </div>
-          <h2>Your Name</h2>
-          <p>Software Developer</p>
-          <div class="social-links">
-            <a href="mailto:your.email@example.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
-            <a href="https://www.linkedin.com/in/yourprofile" target="_blank" rel="noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
-            <a href="https://github.com/yourusername" target="_blank" rel="noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          <div class="timeline-grid">
+            <article class="timeline-card">
+              <span class="tag">Class 10</span>
+              <h3>10th Standard</h3>
+              <p>Built a strong foundation in academics, discipline, and confidence.</p>
+            </article>
+            <article class="timeline-card">
+              <span class="tag">Intermediate</span>
+              <h3>Higher Secondary</h3>
+              <p>Strengthened analytical thinking and developed interest in technical subjects.</p>
+            </article>
+            <article class="timeline-card active">
+              <span class="tag">Current</span>
+              <h3>B.Tech 3rd Year</h3>
+              <p>Continuing to grow in programming, software concepts, and industry-ready skills.</p>
+            </article>
           </div>
-        </aside>
-      </section>
+        </section>
 
-      <!-- ABOUT SECTION -->
-      <section id="about" class="section-card">
-        <div class="section-heading">
-          <p class="eyebrow">About Me</p>
-          <h2>Who I am</h2>
-        </div>
-        <p class="about-text">
-          I am a passionate software developer who enjoys turning ideas into practical,
-          elegant digital products. My background blends front-end development, problem
-          solving, and a strong eye for design. I love learning new tools, improving user
-          experiences, and building reliable applications.
-        </p>
-        <div class="about-grid">
-          <article>
-            <i class="fa-solid fa-bolt"></i>
-            <h3>Fast Learner</h3>
-            <p>Adapt quickly to frameworks, APIs, and workflows.</p>
-          </article>
-          <article>
-            <i class="fa-solid fa-shield-halved"></i>
-            <h3>Detail-Oriented</h3>
-            <p>Write clean code with maintainability and accessibility in mind.</p>
-          </article>
-          <article>
-            <i class="fa-solid fa-users"></i>
-            <h3>Team Player</h3>
-            <p>Collaborate effectively with designers, developers, and clients.</p>
-          </article>
-        </div>
-      </section>
+        <section class="glass-panel reveal" id="skills">
+          <div class="section-heading">
+            <p class="eyebrow">Skills</p>
+            <h2>Core strengths and technical interests</h2>
+          </div>
+          <div class="card-grid skills-grid">
+            <article class="feature-card"><h3>Communication</h3><p>Clear expression, teamwork, and confidence.</p></article>
+            <article class="feature-card"><h3>C Programming</h3><p>Strong logic building and problem-solving foundation.</p></article>
+            <article class="feature-card"><h3>Java</h3><p>OOP concepts, structured learning, and application logic.</p></article>
+            <article class="feature-card"><h3>HTML</h3><p>Semantic structure and modern web content design.</p></article>
+            <article class="feature-card"><h3>CSS</h3><p>Responsive, elegant, and modern interface styling.</p></article>
+            <article class="feature-card"><h3>JavaScript</h3><p>Interactive UI, dynamic behavior, and user-friendly experiences.</p></article>
+          </div>
+        </section>
 
-      <!-- SKILLS SECTION -->
-      <section id="skills" class="section-card">
-        <div class="section-heading">
-          <p class="eyebrow">Skills</p>
-          <h2>Technical Strengths</h2>
-        </div>
-        <div class="skills-grid">
-          <article class="skill-card">
-            <div class="skill-label"><span>HTML & CSS</span><strong>95%</strong></div>
-            <div class="progress-bar"><span data-width="95"></span></div>
-          </article>
-          <article class="skill-card">
-            <div class="skill-label"><span>JavaScript</span><strong>88%</strong></div>
-            <div class="progress-bar"><span data-width="88"></span></div>
-          </article>
-          <article class="skill-card">
-            <div class="skill-label"><span>React</span><strong>82%</strong></div>
-            <div class="progress-bar"><span data-width="82"></span></div>
-          </article>
-          <article class="skill-card">
-            <div class="skill-label"><span>Node.js</span><strong>75%</strong></div>
-            <div class="progress-bar"><span data-width="75"></span></div>
-          </article>
-          <article class="skill-card">
-            <div class="skill-label"><span>UI/UX Design</span><strong>90%</strong></div>
-            <div class="progress-bar"><span data-width="90"></span></div>
-          </article>
-          <article class="skill-card">
-            <div class="skill-label"><span>Problem Solving</span><strong>92%</strong></div>
-            <div class="progress-bar"><span data-width="92"></span></div>
-          </article>
-        </div>
-      </section>
+        <section class="glass-panel reveal" id="certificates">
+          <div class="section-heading">
+            <p class="eyebrow">Certificates</p>
+            <h2>Recognitions and learning milestones</h2>
+          </div>
+          <div class="card-grid cert-grid">
+            <article class="certificate-card">
+              <span class="cert-badge">NPTEL</span>
+              <h3>Database Management Systems</h3>
+              <p>Strengthened concepts in data organization, systems, and query handling.</p>
+            </article>
+            <article class="certificate-card">
+              <span class="cert-badge">NPTEL</span>
+              <h3>Java Programming</h3>
+              <p>Built confidence in Java logic, syntax, and programming fundamentals.</p>
+            </article>
+          </div>
+        </section>
 
-      <!-- EDUCATION SECTION -->
-      <section id="education" class="section-card">
-        <div class="section-heading">
-          <p class="eyebrow">Education</p>
-          <h2>Academic Journey</h2>
-        </div>
-        <div class="timeline">
-          <article class="timeline-item">
-            <span class="timeline-year">2021 - 2024</span>
-            <h3>Bachelor of Technology</h3>
-            <p class="muted">Computer Science • Your College Name</p>
-            <p>Focused on web technologies, software engineering, and data structures.</p>
-          </article>
-          <article class="timeline-item">
-            <span class="timeline-year">2019 - 2021</span>
-            <h3>Intermediate (12th Grade)</h3>
-            <p class="muted">Mathematics and Computer Science</p>
-            <p>Built a strong foundation in logic, analytics, and programming concepts.</p>
-          </article>
-        </div>
-      </section>
+        <section class="glass-panel reveal" id="hobbies">
+          <div class="section-heading">
+            <p class="eyebrow">Hobbies</p>
+            <h2>What keeps me inspired</h2>
+          </div>
+          <div class="chip-row">
+            <span>Learning New Topics</span>
+            <span>Reading Books</span>
+            <span>Exploring New Technologies</span>
+            <span>Creative Problem Solving</span>
+            <span>Technology Research</span>
+          </div>
+        </section>
 
-      <!-- EXPERIENCE SECTION -->
-      <section id="experience" class="section-card">
-        <div class="section-heading">
-          <p class="eyebrow">Work Experience</p>
-          <h2>Where I’ve Worked</h2>
-        </div>
-        <div class="card-grid two-up">
-          <article class="info-card">
-            <h3>Frontend Developer</h3>
-            <p class="muted">ABC Tech Solutions • 2023 - Present</p>
-            <p>Developed responsive interfaces, improved page speed, and collaborated on UI improvements.</p>
-          </article>
-          <article class="info-card">
-            <h3>Web Development Intern</h3>
-            <p class="muted">XYZ Startup • 2022 - 2023</p>
-            <p>Built landing pages, integrated APIs, and contributed to reusable component libraries.</p>
-          </article>
-        </div>
-      </section>
-
-      <!-- PROJECTS SECTION -->
-      <section id="projects" class="section-card">
-        <div class="section-heading">
-          <p class="eyebrow">Projects</p>
-          <h2>Featured Work</h2>
-        </div>
-        <div class="card-grid three-up">
-          <article class="project-card">
-            <h3>E-Commerce Dashboard</h3>
-            <p>Advanced analytics dashboard with sales charts, inventory tools, and responsive design.</p>
-            <a href="https://github.com/yourusername" target="_blank" rel="noreferrer">View Project <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-          </article>
-          <article class="project-card">
-            <h3>Portfolio Website</h3>
-            <p>Single-page portfolio with dark mode, smooth scrolling, and modern animated sections.</p>
-            <a href="https://github.com/yourusername" target="_blank" rel="noreferrer">View Project <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-          </article>
-          <article class="project-card">
-            <h3>Task Management App</h3>
-            <p>Productivity app with drag-and-drop tasks, filters, and real-time updates.</p>
-            <a href="https://github.com/yourusername" target="_blank" rel="noreferrer">View Project <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-          </article>
-        </div>
-      </section>
-
-      <!-- CERTIFICATIONS SECTION -->
-      <section id="certifications" class="section-card">
-        <div class="section-heading">
-          <p class="eyebrow">Certifications</p>
-          <h2>Recognitions & Learning</h2>
-        </div>
-        <div class="card-grid three-up">
-          <article class="info-card"><h3>Responsive Web Design</h3><p class="muted">FreeCodeCamp</p></article>
-          <article class="info-card"><h3>JavaScript Algorithms</h3><p class="muted">FreeCodeCamp</p></article>
-          <article class="info-card"><h3>Google UX Design</h3><p class="muted">Coursera</p></article>
-        </div>
-      </section>
-
-      <!-- CONTACT SECTION -->
-      <section id="contact" class="section-card contact-card">
-        <div class="section-heading">
-          <p class="eyebrow">Contact</p>
-          <h2>Let’s Connect</h2>
-        </div>
-        <div class="contact-wrap">
+        <section class="glass-panel reveal contact-panel" id="contact">
           <div>
-            <p><i class="fa-solid fa-envelope"></i> your.email@example.com</p>
-            <p><i class="fa-solid fa-phone"></i> +91 98765 43210</p>
-            <p><i class="fa-brands fa-linkedin"></i> linkedin.com/in/yourprofile</p>
-            <p><i class="fa-brands fa-github"></i> github.com/yourusername</p>
+            <p class="eyebrow">Contact</p>
+            <h2>Let’s connect</h2>
+            <p class="paragraph-card">Thank you for exploring my portfolio. I’m always open to learning, collaboration, and new opportunities in the tech field.</p>
           </div>
-          <form class="contact-form">
-            <input type="text" placeholder="Your Name" />
-            <input type="email" placeholder="Your Email" />
-            <textarea rows="4" placeholder="Write your message..."></textarea>
-            <button class="btn btn-primary" type="button">Send Message</button>
-          </form>
-        </div>
-      </section>
+          <a class="btn btn-primary" href="mailto:nandini@example.com">Send a Message</a>
+        </section>
+      </main>
 
-      <!-- RUN IN VS CODE -->
-      <section class="section-card run-card">
-        <h2>Run this project in VS Code</h2>
-        <ol>
-          <li>Open this folder in VS Code.</li>
-          <li>Install the Live Server extension if it is not already installed.</li>
-          <li>Right-click on <strong>index.html</strong> and choose <strong>Open with Live Server</strong>.</li>
-          <li>Your portfolio will open in the browser at the local URL shown by Live Server.</li>
-        </ol>
-      </section>
-    </main>
+      <footer class="footer glass-panel">
+        <p>Designed with a modern, premium style for K. Nandini.</p>
+        <p>© <span id="year"></span> K. Nandini. All rights reserved.</p>
+      </footer>
+    </div>
 
-    <footer class="footer">
-      <p>© <span id="year"></span> Your Name. All rights reserved.</p>
-    </footer>
+    <button class="chatbot-btn" id="assistantBtn" type="button" aria-label="Open portfolio assistant">💬</button>
 
-    <script src="script.js"></script>
+    <script src="portfolio.js"></script>
   </body>
 </html>

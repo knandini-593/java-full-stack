@@ -1,107 +1,106 @@
-/*let name="Nandini";
-var age=18;
-const height="1.72";
-console.log(age); 
-console.log(age+5);
-console.log(age-3);
-console.log(age*2);
-console.log(age/2);
-console.log(age%2);
-age+=3;
-console.log(age);
-age-=3;
-console.log(age);
-age*=3;
-console.log(age);
-age/=3;
-console.log(age);
-age%=3;
-console.log(age);
-let age1=30;
-console.log(age>age1);
-console.log(age<age1);
-console.log(age>=age1);
-console.log(age<=age1);
-let food  = "Biryani";
-let break_fast="Idly";
-let food2 = "Idly";
-let food3 = "pongal";
-let food4 = "Poori";
-let food5 = "Dosa";
-if (food1==break_fast) {
-  console.log("It's nice to have Biryani as in the Breakfast");
-}
-else if(food2==break_fast) {
-  console.log("It's nice to have Idly as in the Morning");
-}
-for(let i=1;i<=30;i++)
-{
-  console.log("Day "+i+" completed");
-  i++;
-}
-let user_name="Nandini";
-let password="Nandini@123";
-let name="nandhu";
-let pin="nandhu@123";
-name_1="mounika";
-pin_1="mounika@123";
-if(name=="nandhu"){
-  console.log(user_name);
-  if(pin=="nandhu@123");
-  {
-    console.log("loged in successfully");
-  }
-  for(i=1;i<=10;i++){
-    for(let j=1;j<=10;j++){
-      console.log(i+" X "+j+" = "+(i*j));
-    }
-  }
-}*/
-/*function cook()
-{
-  console.log("Pour the flour in  pawa");
-  console.log("Rub it round with gareta");
-  console.log("spill some oil above it  then wait");
-  console.log("twist it with dosa gareta");
-  console.log("atlast gently serve it to someone");
-}
-for(let i=1;i<=5;i++){
-  cook();}
-  function dishwash(vessels){
-    console.log("we have to wash "+vessels+" vessels");
-  }
-  dishwash(2);
-  function num(n)
-  {
-    if(n>10){
-      return;
-    }
-    console.log(n);
-    n+=1;
-    num(n);
-  }
-  num(1);*/
- /* function guess(n) {
-    let userGuess = Number(prompt("Enter a number:"));
+const themeToggle = document.getElementById('themeToggle');
+const menuToggle = document.getElementById('menuToggle');
+const navLinks = document.getElementById('navLinks');
+const yearLabel = document.getElementById('yearLabel');
+const typingText = document.getElementById('typingText');
+const contactForm = document.getElementById('contactForm');
 
-    if (userGuess == n) {
-        console.log("Congratulations! You guessed the number.");
-    } else if (userGuess < n) {
-        console.log("Too low! Try again.");
-        guess(n);
-    } else {
-        console.log("Too high! Try again.");
-        guess(n);
-    }
+function setTheme(theme) {
+  document.body.classList.toggle('light-theme', theme === 'light');
+  localStorage.setItem('portfolio-theme', theme);
+  themeToggle.textContent = theme === 'light' ? '🌙' : '☀️';
 }
 
-let number = Math.floor(Math.random() * 100) + 1;
-guess(number);*/
-let chocolate=["Melodi","Fivestar","kitkat","kachamango","darkchocolate","alphenlebe"];
-let sales={
-  nandini:chocolate[0],
-  tejasree:chocolate[1],
-  mounika:chocolate[2],
-  shalini:chocolate[3],
+const savedTheme = localStorage.getItem('portfolio-theme') || 'dark';
+setTheme(savedTheme);
+
+themeToggle.addEventListener('click', () => {
+  const nextTheme = document.body.classList.contains('light-theme') ? 'dark' : 'light';
+  setTheme(nextTheme);
+});
+
+menuToggle.addEventListener('click', () => {
+  const isOpen = navLinks.classList.toggle('open');
+  menuToggle.setAttribute('aria-expanded', String(isOpen));
+});
+
+navLinks.querySelectorAll('a').forEach((link) => {
+  link.addEventListener('click', () => {
+    navLinks.classList.remove('open');
+    menuToggle.setAttribute('aria-expanded', 'false');
+  });
+});
+
+yearLabel.textContent = new Date().getFullYear();
+
+const words = ['K. Nandini', 'a CSE Student', 'a Java & DBMS Learner', 'a Web Developer'];
+let wordIndex = 0;
+let charIndex = 0;
+let isDeleting = false;
+
+function typeLoop() {
+  const current = words[wordIndex];
+  typingText.textContent = current.slice(0, charIndex);
+
+  if (!isDeleting && charIndex < current.length) {
+    charIndex += 1;
+  } else if (isDeleting && charIndex > 0) {
+    charIndex -= 1;
+  } else {
+    isDeleting = !isDeleting;
+    wordIndex = (wordIndex + 1) % words.length;
+  }
+
+  const speed = isDeleting ? 55 : 95;
+  setTimeout(typeLoop, speed);
+}
+
+typeLoop();
+
+const particles = document.getElementById('particles');
+for (let i = 0; i < 18; i += 1) {
+  const dot = document.createElement('span');
+  dot.style.width = `${6 + Math.random() * 12}px`;
+  dot.style.height = dot.style.width;
+  dot.style.left = `${Math.random() * 100}%`;
+  dot.style.top = `${Math.random() * 100}%`;
+  dot.style.animationDuration = `${8 + Math.random() * 8}s`;
+  dot.style.animationDelay = `${Math.random() * 5}s`;
+  particles.appendChild(dot);
+}
+
+const progressBars = document.querySelectorAll('.progress-bar span');
+const reveal = () => {
+  progressBars.forEach((bar) => {
+    const rect = bar.getBoundingClientRect();
+    if (rect.top < window.innerHeight - 100) {
+      bar.style.width = bar.getAttribute('data-width') + '%';
+    }
+  });
 };
-console.log(sales.mounika);
+window.addEventListener('scroll', reveal, { passive: true });
+window.addEventListener('load', reveal);
+
+const cards = document.querySelectorAll('.tilt-card');
+cards.forEach((card) => {
+  card.addEventListener('mousemove', (event) => {
+    const rect = card.getBoundingClientRect();
+    const x = event.clientX - rect.left;
+    const y = event.clientY - rect.top;
+    const rotateY = ((x / rect.width) - 0.5) * 8;
+    const rotateX = ((0.5 - y / rect.height)) * 8;
+    card.style.transform = `perspective(700px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-6px)`;
+  });
+  card.addEventListener('mouseleave', () => {
+    card.style.transform = '';
+  });
+});
+
+contactForm.addEventListener('submit', (event) => {
+  event.preventDefault();
+  const formData = new FormData(contactForm);
+  const message = `Name: ${formData.get('name')}\nEmail: ${formData.get('email')}\nMessage: ${formData.get('message')}`;
+  alert('Thank you for your message!\n\n' + message);
+  contactForm.reset();
+});
+

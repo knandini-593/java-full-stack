@@ -8,3 +8,7 @@ let water = docuument.queryselector("#content");
 console.log(water);
 let queries = Document.queryselectorAll("p");
 console.log(queries);
+let value = document.getElementById("wish").innerText="Happy Birthday to you";
+value.innerText="Happy Birthday";
+value.style.fontsize="50px";
+value.style.fontstyle="italic";

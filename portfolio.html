@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>K. Nandini | Portfolio</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#0f172a;
+    color:white;
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 10%;
+    background:#111827;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:bold;
+    color:#38bdf8;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:20px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    transition:0.4s;
+}
+
+nav ul li a:hover{
+    color:#38bdf8;
+}
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:20px;
+    background:linear-gradient(135deg,#0f172a,#1e293b);
+}
+
+.hero-content h1{
+    font-size:60px;
+    color:#38bdf8;
+}
+
+.hero-content h2{
+    margin:15px 0;
+    color:#facc15;
+}
+
+.hero-content p{
+    max-width:700px;
+    margin:auto;
+    line-height:1.8;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:20px;
+    padding:12px 25px;
+    background:#38bdf8;
+    color:black;
+    text-decoration:none;
+    border-radius:30px;
+    font-weight:bold;
+    transition:0.4s;
+}
+
+.btn:hover{
+    transform:translateY(-5px);
+    box-shadow:0 0 20px #38bdf8;
+}
+
+section{
+    padding:70px 10%;
+}
+
+.section-title{
+    text-align:center;
+    font-size:35px;
+    margin-bottom:40px;
+    color:#38bdf8;
+}
+
+.card{
+    background:#1e293b;
+    padding:25px;
+    border-radius:15px;
+    transition:0.5s;
+    margin-bottom:20px;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 0 20px #38bdf8;
+}
+
+.skills{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+    gap:20px;
+}
+
+.skill{
+    background:#1e293b;
+    padding:20px;
+    text-align:center;
+    border-radius:15px;
+    transition:0.5s;
+    cursor:pointer;
+}
+
+.skill:hover{
+    background:#38bdf8;
+    color:black;
+    transform:scale(1.08);
+}
+
+.certificates{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.certificate{
+    background:#1e293b;
+    padding:20px;
+    border-radius:15px;
+    text-align:center;
+    transition:0.5s;
+}
+
+.certificate:hover{
+    background:#38bdf8;
+    color:black;
+    transform:translateY(-8px);
+}
+
+.hobbies{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:20px;
+}
+
+.hobby{
+    background:#1e293b;
+    padding:15px 25px;
+    border-radius:30px;
+    transition:0.5s;
+}
+
+.hobby:hover{
+    background:#38bdf8;
+    color:black;
+}
+
+.contact{
+    text-align:center;
+}
+
+footer{
+    background:#111827;
+    text-align:center;
+    padding:20px;
+}
+
+#chatBtn{
+    position:fixed;
+    right:20px;
+    bottom:20px;
+    width:60px;
+    height:60px;
+    border:none;
+    border-radius:50%;
+    background:#38bdf8;
+    font-size:24px;
+    cursor:pointer;
+    box-shadow:0 0 20px #38bdf8;
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+    <div class="logo">K.NANDINI</div>
+
+    <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#certificates">Certificates</a></li>
+        <li><a href="#hobbies">Hobbies</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<section class="hero">
+    <div class="hero-content">
+        <h1>K. NANDINI</h1>
+
+        <h2 id="changingText">B.Tech 3rd Year Student</h2>
+
+        <p>
+            Passionate learner with strong communication and programming skills.
+            Interested in exploring new technologies and building innovative solutions.
+            Dedicated to continuous growth in software development and problem solving.
+        </p>
+
+        <a href="#contact" class="btn">Contact Me</a>
+    </div>
+</section>
+
+<section id="about">
+    <h2 class="section-title">About Me</h2>
+
+    <div class="card">
+        <p>
+            I am K. Nandini, currently pursuing B.Tech 3rd Year and passionate about technology and learning.
+            I enjoy reading books, exploring new topics, and continuously improving my technical knowledge.
+            My goal is to become a skilled software professional and contribute to innovative projects.
+        </p>
+    </div>
+</section>
+
+<section id="education">
+    <h2 class="section-title">Education</h2>
+
+    <div class="card">
+        <h3>10th Standard</h3>
+    </div>
+
+    <div class="card">
+        <h3>Intermediate</h3>
+    </div>
+
+    <div class="card">
+        <h3>B.Tech - 3rd Year</h3>
+        <p>Currently Pursuing</p>
+    </div>
+</section>
+
+<section id="skills">
+    <h2 class="section-title">Skills</h2>
+
+    <div class="skills">
+        <div class="skill">Communication</div>
+        <div class="skill">C Programming</div>
+        <div class="skill">Java</div>
+        <div class="skill">HTML</div>
+        <div class="skill">CSS</div>
+        <div class="skill">JavaScript</div>
+    </div>
+</section>
+
+<section id="certificates">
+    <h2 class="section-title">Certificates</h2>
+
+    <div class="certificates">
+
+        <div class="certificate">
+            <h3>NPTEL</h3>
+            <p>Database Management Systems (DBMS)</p>
+        </div>
+
+        <div class="certificate">
+            <h3>NPTEL</h3>
+            <p>Java Programming</p>
+        </div>
+
+    </div>
+</section>
+
+<section id="hobbies">
+    <h2 class="section-title">Hobbies</h2>
+
+    <div class="hobbies">
+        <div class="hobby">Learning New Topics</div>
+        <div class="hobby">Reading Books</div>
+        <div class="hobby">Exploring</div>
+    </div>
+</section>
+
+<section id="contact">
+    <h2 class="section-title">Contact</h2>
+
+    <div class="card contact">
+        <h3>K. NANDINI</h3>
+        <p>B.Tech 3rd Year Student</p>
+        <br>
+        <p>Ready to learn, grow and contribute to innovative projects.</p>
+    </div>
+</section>
+
+<footer>
+    <p>© 2025 K. Nandini | Portfolio</p>
+</footer>
+
+<button id="chatBtn" onclick="portfolioBot()">💬</button>
+
+<script>
+
+const texts = [
+    "B.Tech 3rd Year Student",
+    "Java Developer",
+    "Frontend Developer",
+    "Lifelong Learner",
+    "Problem Solver"
+];
+
+let i = 0;
+
+setInterval(() => {
+    document.getElementById("changingText").innerHTML = texts[i];
+    i = (i + 1) % texts.length;
+}, 2000);
+
+function portfolioBot(){
+
+let question = prompt(
+"Ask About Me:\n\n1. Skills\n2. Education\n3. Certificates\n4. Hobbies"
+);
+
+if(question === null) return;
+
+question = question.toLowerCase();
+
+if(question.includes("skill")){
+    alert("Skills: Communication, C, Java, HTML, CSS, JavaScript");
+}
+else if(question.includes("education")){
+    alert("10th, Intermediate, Currently Pursuing B.Tech 3rd Year");
+}
+else if(question.includes("certificate")){
+    alert("NPTEL DBMS and NPTEL Java Programming");
+}
+else if(question.includes("hobbies")){
+    alert("Learning New Topics, Reading Books, Exploring");
+}
+else{
+    alert("Hi! I am K. Nandini's Portfolio Assistant.");
+}
+}
+
+</script>
+
+</body>
+</html>
